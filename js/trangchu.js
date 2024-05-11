@@ -11,7 +11,7 @@ $(document).ready(function(){
     }
 
     function showSlide() {
-        $(".slide .sl").animate({opacity: "0.8"},"slow", function(){
+        $(".slide .sl").animate({opacity: "0.8"},"", function(){
             $(".slide .sl").addClass("d-none").eq(stt).removeClass("d-none").animate({opacity: 1});
         });
         $(".dot").removeClass("active");
