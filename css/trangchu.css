@@ -2,9 +2,10 @@ body{
     margin: 0;
     padding: 0;
     background-color: #FFFFFF;
+    overflow-x: hidden;
 }
 .header{
-    height:120px;
+    height:100px;
     font-size: 15px;
     font-weight: bold;
     background-color: white;
@@ -29,7 +30,7 @@ body{
 }
 
 
-@media(max-width : 992px){
+@media only screen and (max-width: 768px){
     .nav-item{
         border-bottom:none;
     }
@@ -41,72 +42,105 @@ body{
     .collapse{
         order: 1;
     }
-
-    .anh{
-        height: 100%;
-        width: 100%;
-    }
     
     .anh img{
-        height: 30%;
-        width: 30%;
+        height: 80%;
+        width: 80%;
+    }
+    .slide{
+        height: 250px;
+        width: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    }
+    .slide .slide-items{
+        height: 250px;
+        width: 100%;
     }
 
+    .logohaui img{
+        width: 200px;
+        height: 70px;
+    }
+
+    .slide h{
+        font-size: 15px;
+        
+    }
+
+    .slide h1{
+        font-size: 25px;
+    }
+
+    .footer .name1{
+        font-size: 15px;
+    }
+    .footer .name2{
+        font-size: 12px;
+    }
 }
 
-.logohaui{
-    margin-right: 1rem;
+@media only screen and (min-width: 768px) {
+    .slide{
+        height: 550px;
+        width: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    }
+        .slide .slide-items{
+        height: 550px;
+        width: 100%;
+    }
+     
+    .anh img{
+        height: 90%;
+        width: 90%;
+    }
+
+    .logohaui img{
+        width: 300px;
+        height: 80px;
+    }
+
+    .slide h{
+        font-size: 30px;
+        
+    }
+
+    .slide h1{
+        font-size: 45px;
+    }
+
+    .icpctt{
+        height:550px
+    }
+
+    .footer .name1{
+        font-size: 24px;
+    }
+    .footer .name2{
+        font-size:15px;
+    }
 }
 
-.logohaui img{
-    width: 300px;
-    height: 80px;
-}
 
 .logoICPC{
     height: 75px;
     width: 150px;
-    margin-left: 50px;
 }
 .logoICPC img{
     height: 70px;
     width: 150px;
 }
-.anh{
-    height: 400px;
-    width: 350px;
-}
-
-.anh img{
-    height: 400px;
-    width: 350px;
-
-}
 
 .slide h1{
     font-family: "Times New Roman", Times, serif;
-    font-size: 50px;
     font-weight: bold;
     color: #D0EBFF;
 }
 
 .slide h{
     font-family: "Times New Roman", Times, serif;
-    font-size: 32px;
     color: #D0EBFF;
 }
-
-.slide{
-    height: 602px;
-    width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
-}
-
-.slide .slide-items{
-    height: 602px;
-    width: 100%;
-}
-
 
 .sl::before {
     content: ""; 
@@ -120,8 +154,8 @@ body{
 }
 
 .dot {
-    height: 10px;
-    width: 10px;
+    height: 8px;
+    width: 8px;
     background-color: #bbb;
     border-radius: 50%;
     margin: 0 5px;
@@ -135,6 +169,14 @@ body{
 .slide button{
     background-color: white;
     color:rgb(0, 0, 0);
+}
+
+.tt .col-3:hover img {
+    transform: scale(1.3);
+}
+
+.donor .row .col-lg-3:hover img {
+    transform: scale(1.3);
 }
 
 .pagination{
@@ -159,6 +201,10 @@ a:hover{
     height: 30px;
     margin-right: 20px;
     
+}
+
+.network img:hover{
+    transform: scale(1.3);
 }
 
 
