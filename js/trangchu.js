@@ -36,3 +36,18 @@ $(document).ready(function(){
     });
 });
 
+var logoICPC = document.querySelector('.logoICPC');
+
+window.addEventListener('resize', function() {
+    if (window.innerWidth <= 1100) {
+        logoICPC.style.display = 'none';
+    } else {
+        logoICPC.style.display = 'block';
+    }
+});
+
+if (window.innerWidth <= 1100) {
+    logoICPC.style.display = 'none';
+}
+
+
