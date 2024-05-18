@@ -5,11 +5,9 @@ body{
     overflow-x: hidden;
 }
 .header{
-    height:100px;
+    height:77px;
     font-size: 15px;
-    font-weight: bold;
-    background-color: white;
-    
+    background-color: white;  
 }
 
 #navMenu .nav-item a:hover {
@@ -17,7 +15,8 @@ body{
 }
 
 #navMenu .nav-item a{
-    color: #1B416C;
+    color: black;
+    font-weight: normal;
 }
 
 .navbar-nav{
@@ -30,14 +29,13 @@ body{
 }
 
 
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 786px){
         .nav-item{
             border-bottom:none;
         }
-    
-    
-        .collapse{
-            order: 1;
+        
+        .logoICPC{
+            display: none;
         }
         
 
@@ -51,18 +49,13 @@ body{
             width: 100%;
         }
     
-        .logohaui img{
-            width: 90px;
-            height: 50px;
-        }
-    
         .slide h{
-            font-size: 8px;
+            font-size: 10px;
             
         }
     
         .slide h1{
-            font-size: 10px;
+            font-size: 15px;
         }
     
         .footer .name1{
@@ -73,7 +66,7 @@ body{
         }
     
         .sl button{
-            font-size: 4px;
+            font-size: 5px;
         }
         .icpctt{
             height:250px
@@ -89,7 +82,7 @@ body{
         }
 }
 
-@media only screen and (max-width: 768px) and (min-width: 576px){
+@media only screen and (min-width: 786px) and (max-width: 1388px){
     .nav-item{
         border-bottom:none;
     }
@@ -99,79 +92,29 @@ body{
         height:350px
     }
 
-    .collapse{
-        order: 1;
+    .logoICPC{
+        display: none!important;
     }
     
     .slide{
-        height: 200px;
+        height: 400px;
         width: 100%;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
     }
     .slide .slide-items{
-        height: 200px;
+        height: 400px;
         width: 100%;
     }
 
-    .logohaui img{
-        width: 150px;
-        height: 50px;
-    }
+
 
     .slide h{
-        font-size: 15px;
-        
-    }
-
-    .slide h1{
         font-size: 25px;
-    }
-
-    .footer .name1{
-        font-size: 15px;
-    }
-    .footer .name2{
-        font-size: 12px;
-    }
-
-    .sl button{
-        font-size: 8px;
-    }
-
-    .dot {
-        height: 6px;
-        width: 6px;
-        background-color: #bbb;
-        border-radius: 50%;
-        margin: 0 5px;
-        cursor: pointer;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .slide{
-        height: 450px;
-        width: 100%;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
-    }
-    .slide .slide-items{
-        height: 450px;
-        width: 100%;
-    }
-
-
-    .logohaui img{
-        width: 250px;
-        height: 70px;
-    }
-
-    .slide h{
-        font-size: 30px;
         
     }
 
     .slide h1{
-        font-size: 45px;
+        font-size: 35px;
     }
 
     .icpctt{
@@ -195,10 +138,67 @@ body{
     }
 }
 
-    .anh img{
-        height: 75%;
-        width: 75%;
+@media only screen and (min-width: 1388px) {
+    .slide{
+        height: 450px;
+        width: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
     }
+    .slide .slide-items{
+        height: 450px;
+        width: 100%;
+    }
+
+
+
+    .slide h{
+        font-size: 25px;
+        
+    }
+
+    .slide h1{
+        font-size: 35px;
+    }
+
+    .icpctt{
+        height:500px
+    }
+
+    .footer .name1{
+        font-size: 24px;
+    }
+    .footer .name2{
+        font-size:15px;
+    }
+
+    .dot {
+        height: 8px;
+        width: 8px;
+        background-color: #bbb;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+}
+
+
+.logohaui{
+    height: 100%;
+    
+}
+.logohaui a{
+    height: 100%;
+    width: 100%;
+}
+.logohaui a img{
+    height: 50px;
+    width: 100%;
+}
+
+.anh img{
+    height: 80%;
+    width: 80%;
+}    
 
 .logoICPC{
     height: 60px;
@@ -237,8 +237,7 @@ body{
 }
 
 .slide button{
-    background-color: white;
-    color:rgb(0, 0, 0);
+    color: white;
 }
 
 .tt .col-3:hover img {

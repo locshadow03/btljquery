@@ -8,11 +8,11 @@
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="img/logoslide/logoolympic.png">
-    <link href= "css/trangchu.css" rel = "stylesheet">
+    <link href= "css/listprocon.css" rel = "stylesheet">
     <script src= "jquery-3.7.1.js"></script>
 </head>
 <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white header fixed-top">
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white header fixed-top">
             <div class="mx-2 logohaui">
                 <img src="img/logohaui/logohaui1.jfif" class="d-flex align-items-center justify-content-center">
             </div>
@@ -67,8 +67,88 @@
             <div class="logoICPC mx-2 text-center">
                 <img src="img/logohaui/logoICPC.png">
             </div>
-        </nav>
+        </nav> -->
 
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-xl navbar-custom navbar-light">
+              <a href="#" class="navbar-brand d-block" id="logo_nav" >
+                <img  src="/img/Trangchu/logo_truong.webp" style="width: 100%;">
+              </a>
+               
+              <button 
+              id="toggle_nav"
+              type="button"
+              data-bs-toggle="collapse"
+              class="navbar-toggler"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              style="margin-right: 10px;"
+              >
+               <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a href="#" class="nav-link active">TRANG CHỦ</a>
+                  </li>
+                  <li class="nav-item active dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"
+                      role="button" id="show_danh_sach"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      DÀNH CHO THÍ SINH
+                    </a>
+                    <ul class="dropdown-menu" >
+                      <li><a class="dropdown-item" href="#">DANH SÁCH OLP</a></li>
+                      <li><a class="dropdown-item" href="#">DANH SÁCH ICPC</a></li>
+                      <li><a class="dropdown-item" href="#">DANH SÁCH PROCON</a></li>
+                      <li><a class="dropdown-item" href="#">DANH SÁCH PMNM</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item active">
+                    <a href="#" class="nav-link">PHÒNG TRƯNG BÀY</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a href="#" class="nav-link">LỊCH TRÌNH</a>
+                  </li>
+                  <li class="nav-item active dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"
+                    role="button" id="show_ket_qua"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >
+                      KẾT QUẢ
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">IPCP ASIA HANOI 2024</a></li>
+                      <li><a class="dropdown-item" href="#">KHỐI SIÊU CUP OLP24</a></li>
+                      <li><a class="dropdown-item" href="#">KHỐI CHUYÊN TIN</a></li>
+                      <li><a class="dropdown-item" href="#">KHỐI KHÔNG CHUYÊN TIN & CAO ĐẲNG</a></li>
+                      <li><a class="dropdown-item" href="#">KHỐI TẬP THỂ PHẦN MỀM NGUỒN MỞ</a></li>
+                      <li><a class="dropdown-item" href="#">KHỐI TẬP THỂ PROCON VIETNAM</a></li>
+                      <li><a class="dropdown-item" href="#">GIAI ĐỒNG ĐỘI OLYMPIC 2024</a></li>
+                      <li><a class="dropdown-item" href="#">GIẢI NỮ XUẤT SẮC 2024</a></li>
+                      <li><a class="dropdown-item" href="#">ICPC ASIA HUE CITY 2024-HSGS</a></li>
+                      <li><a class="dropdown-item" href="#">KHỐI SIÊU CUP OLP24-HSGS</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item active">
+                    <a href="#" class="nav-link">BAN TỔ CHỨC</a>
+                  </li>
+                </ul>
+              </div>
+              <a id="logo_nav2" href="#" class="navbar-brand position-relative top-100 d-none d-xxl-block">
+                <img  
+                src="/img/Trangchu/logo2 1.png"
+                width="160"
+                height="60"
+                >
+              </a>
+            </nav>
+          </div>
         <div style = "height: 80px;"></div>
 
         <div class = "container mt-4">
@@ -76,15 +156,17 @@
             <div class = "col-md-6 col-8 col-lg-5 col-xl-6 mx-auto text-center">
                 <h1>DANH SÁCH THAM GIA PROCON VIỆT NAM 2024</h1>
             </div>
-            <div class = "w-100 mt-4">
-                <table class="table table-hover table-bordered" id = "excelTable">
+            <div class = "container-fluid mt-4">
+                <div class="table-container">
+                <table class="table table-hover  table-bordered" id = "excelTable">
                     <thead>
                         <tr>
-                          <th scope="col" class = "text-center">Tên đội</th>
-                          <th scope="col" class = "text-center">Thành viên</th>
-                          <th scope="col" class = "text-center">Trường</th>
-                          <th scope="col" class = "text-center">Phòng thi</th>
-                          <th scope="col" class = "text-center">Máy thi</th>
+                            <th scope="col" class="text-center ">Tên đội</th>
+                            <th scope="col" class="text-center ">Thành viên</th>
+                            <th scope="col" class="text-center ">Trường</th>
+                            <th scope="col" class="text-center ">Phòng thi</th>
+                            <th scope="col" class="text-center ">Máy thi</th>
+                        </tr>
                         </tr>
                     </thead>
 
@@ -92,6 +174,7 @@
 
                     </tbody>
                 </table>
+                </div>
             </div>
             </div>
         </div>

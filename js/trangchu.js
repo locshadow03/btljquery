@@ -11,9 +11,11 @@ $(document).ready(function(){
     }
 
     function showSlide() {
-        $(".slide .sl").animate({opacity: "0.7"},"slow", function(){
-            $(".slide .sl").addClass("d-none").eq(stt).removeClass("d-none").animate({opacity: 1});
-        });
+        // $(".slide .sl").animate({opacity: "0.7"},"slow", function(){
+        //     $(".slide .sl").addClass("d-none").eq(stt).removeClass("d-none").animate({opacity: 1});
+        // });
+        $(".slide .sl").addClass("d-none").hide();
+        $(".slide .sl").eq(stt).removeClass("d-none").show();
         $(".dot").removeClass("active");
         $(".dot").eq(stt).addClass("active");
     }
@@ -49,5 +51,6 @@ window.addEventListener('resize', function() {
 if (window.innerWidth <= 1100) {
     logoICPC.style.display = 'none';
 }
+
 
 
