@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+}
+
+.header{
+    height:77px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: white;
+    
+}
+
+.network img{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    
+}
+
+#navMenu .nav-item a:hover {
+    color:red;
+}
+
+#navMenu .nav-item a{
+    color: #1B416C;
+}
+
+.navbar-nav{
+    background-color: #fff;
+    color: rgb(85,85,85);
+}
+
+.navbar{
+    box-shadow: 0 3px 9px 3px rgba(0,0,0,0.1);
+}
+.logoICPC{
+    height: 60px;
+    width: 130px;
+}
+.logoICPC img{
+    height: 60px;
+    width: 130px;
+}
+
+
+@media only screen and (max-width: 786px){
+    .nav-item{
+        border-bottom:none;
+    }
+    .logoICPC{
+        display: none;
+    }
+    .border-0{
+        border-bottom: #1B416C solid 1px;
+    }
+
+    .collapse{
+        order: 1;
+    }
+
+    .footer .name1{
+        font-size: 12px;
+    }
+    .footer .name2{
+        font-size: 8px;
+    }
+    .ttt{
+        height: 250px;
+    }
+
+    .ttt h1{
+        font-size: 20px;
+    }
+
+    .ttt h3{
+        font-size: 16px;
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1388px){
+    .nav-item{
+        border-bottom:none;
+    }
+    .logoICPC{
+        display: none!important;
+    }
+    .collapse{
+        order: 1;
+    }
+
+    .footer .name1{
+        font-size: 15px;
+    }
+    .footer .name2{
+        font-size: 12px;
+    }
+    .ttt{
+        height: 400px;
+    }
+
+    .ttt h1{
+        font-size: 35px;
+    }
+
+    .ttt h3{
+        font-size: 25px;
+    }
+}
+
+
+
+@media only screen and (min-width: 1388px) {
+    .footer .name1{
+        font-size: 24px;
+    }
+    .footer .name2{
+        font-size:15px;
+    }
+
+    .ttt{
+        height: 450px;
+    }
+
+    .ttt h1{
+        font-size: 40px;
+    }
+
+    .ttt h3{
+        font-size: 30px;
+    }
+
+
+}
+
+#excelTable th {
+    background-color: #0000002e;
+}
+
+.logohaui{
+    height: 100%;
+    
+}
+.logohaui a{
+    height: 100%;
+    width: 100%;
+}
+.logohaui a img{
+    height: 50px;
+    width: 100%;
+}
+
+
+
+
+
+
+

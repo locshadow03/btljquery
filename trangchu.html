@@ -12,9 +12,14 @@
     <script src= "jquery-3.7.1.js"></script>
 </head>
 <body>
-
+        <div class="notification-container">
+            <div class="notification-icon">
+                <span class="notification-badge">3</span>
+                <i class="fa fa-bell"></i>
+            </div>
+        </div>
         <nav class="navbar navbar-expand-lg navbar-light bg-white header fixed-top">
-            <div class="logohaui" style = "margin-left: 3rem;">
+            <div class="logohaui" style = "margin-left: 2rem;">
                 <a href="#" class="navbar-brand d-flex align-items-center justify-content-center h-100 w-100">
                 <img src="img/logohaui/logo_truong.webp">
                 </a>
@@ -44,8 +49,11 @@
                     <li class="nav-item px-2 py-2">
                         <a class="nav-link" href="#">PHÒNG TRƯNG BÀY</a>
                     </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link" href="#">Lịch trình</a>
+                    </li>
                     <li class="nav-item px-2 py-2 dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">LỊCH TRÌNH</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Kết quả</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">IPCP ASIA HANOI 2024</a></li>
                             <li><a class="dropdown-item" href="#">KHỐI SIÊU CUP OLP24</a></li>
@@ -59,9 +67,6 @@
                             <li><a class="dropdown-item" href="#">KHỐI SIÊU CUP OLP24-HSGS</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item px-2 py-2">
-                        <a class="nav-link" href="#">KẾT QUẢ</a>
-                    </li>
                     <li class="nav-item px-2 py-2 border-0">
                         <a class="nav-link" href="#">BAN TỔ CHỨC</a>
                     </li>    
@@ -73,78 +78,100 @@
         </nav>
     
         <div style="height: 77px;"></div>
-        <div class = "slide position-relative w-100">
-            <div class = "sl w-100 d-flex position-absolute align-items-center justify-content-center" idx = "0">
-                <img src = "img/slide/slide1.jpg" class=" w-100 slide-items">
-                <div class="mx-2 w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center row">
-                    <div class = "text-center col-md-8 col-lg-8 col-8 col-xl-8">
-                        <h1>THE 2024 ICPC ASIA HA NOI REGIONAL CONTEST</h1>
-                        <h>Cuộc thi lập trình quốc tế lâu đời và danh giá nhất dành cho sinh viên các trường đại học và cao đẳng trên toàn cầu</h> 
-                        <br>
-                        <button type="button" class="btn btn-primary">Chi tiết</button>
-                    </div>
-                    
-                    <div class = "anh col-md-4 col-lg-4 col-xl-4 col-4 h-75 d-flex align-items-center justify-content-center">
-                        <img src = "img/logoslide/ICPC_logo.png">
-                    </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/slide/slide1.jpg" class="d-block w-100" alt="...">
+                <div class="overlay_L"></div>
+                <div class="carousel-caption w-100 h-100 d-flex align-items-center">
+                  <div class = "text-center col-md-8 col-lg-8 col-8 col-xl-8 align-items-end">
+                    <h1>THE 2024 ICPC ASIA HA NOI REGIONAL CONTEST</h1>
+                    <p>Cuộc thi lập trình quốc tế lâu đời và danh giá nhất dành cho sinh viên các trường đại học và cao đẳng trên toàn cầu</p> 
+                   
+                    <button class  = "btn btn-primary">Chi tiết</button>
+                  </div>
+                  
+                  <div class = "anh col-md-4 col-lg-4 col-xl-4 col-4 h-100 position-relative">
+                      <img src = "img/logoslide/ICPC_logo.png" 
+                      style="width: 70%; height: auto; left: 10%; top : 10%; "
+                      class="position-absolute"
+                      >
+                  </div>
                 </div>
+              </div>
+    
+              <div class="carousel-item">
+                <img src="img/slide/slide2.jpg" class="d-block w-100" alt="...">
+                <div class="overlay_R"></div>
+                <div class="carousel-caption w-100 h-100 d-flex align-items-center">
+                  <div class = "anh col-md-4 col-lg-4 col-xl-4 col-4 h-100 position-relative">
+                      <img src = "img/logoslide/OLP_logo.jpg" 
+                      style="width: 130%; height: auto; left: -10%; top : 10%; "
+                      class="position-absolute"
+                      >
+                  </div>
+                  <div class = "text-center col-md-8 col-lg-8 col-8 col-xl-8 align-items-end justify-content-center">
+                    <h1 class="">Olympic Tin Học Sinh Viên</h1>
+                    <p style="padding: 0 20px;">
+                    Kì thi tin học lớn nhất dành cho sinh viên hiện nay. Mục đích của cuộc thi nhằm khuyến khích phong trào học tập, rèn luyện, nghiên cứu sáng tạo CNTT-TT của sinh viên trong các trường Đại học, cao đẳng
+                    </p>
+                   
+                    <button class  = "btn btn-primary">Chi tiết</button>
+                  </div>
+                  
+                </div>
+              </div> 
+    
+              <div class="carousel-item ">
+                <img src="img/slide/slide3.jpg" class="d-block w-100" alt="...">
+                <div class="overlay_L"></div>
+                <div class="carousel-caption w-100 h-100 d-flex align-items-center">
+                  <div class = "anh col-md-4 col-lg-4 col-xl-4 col-4 h-100 position-relative">
+                      <img src = "img/logoslide/PROCON_Logo.png" 
+                      style="width: 70%; height: auto; left: 10%; top: 15%;"
+                      class="position-absolute"
+                      >
+                  </div>
+                  <div class = "text-center col-md-8 col-lg-8 col-8 col-xl-8 align-items-end justify-content-center">
+                    <h1>Procon Việt Nam 2024</h1>
+                    <p class="w-75" style="margin: auto;">Cuộc thi lập trình đối kháng PROCON danh cho Sinh viên chuyên hoặc không chuyên về CNTT của các trường đại học, cao đẳng trên toàn quốc.
+                    </p>
+                    <button class = "btn btn-primary">Chi tiết</button>
+                  </div>
+                  
+                </div>
+              </div>
+              
+              <div class="carousel-item">
+                <img src="img/slide/slide2.jpg" class="d-block w-100" alt="...">
+                <div class="overlay_L"></div>
+                <div class="carousel-caption w-100 h-100 d-flex align-items-center">
+                  <div class = "text-center col-md-8 col-lg-8 col-8 col-xl-8 align-items-end justify-content-center">
+                    <h1>Phần mềm mã nguồn mở</h1>
+                    <p class="w-75" style="margin: auto;">Kì thi tin học lớn nhất dành cho sinh viên hiện nay. Mục đích của cuộc thi nhằm khuyến khích phong trào học tập, rèn luyện, nghiên cứu sáng tạo CNTT-TT của sinh viên trong các trường Đại học, cao đẳng</p>
+                    <button class  = "btn btn-primary">Chi tiết</button>
+                  </div>
+                  
+                  <div class = "anh col-md-4 col-lg-4 col-xl-4 col-4 h-100 position-relative">
+                      <img src = "img/logoslide/linux.jpg" 
+                      style="width: 70%; height: auto; left: 10%; top : 35%; "
+                      class="position-absolute"
+                      >
+                  </div>
+                </div>
+              </div>
             </div>
+    
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next h-100" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon"  aria-hidden="false"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
-            <div class = "sl w-100 d-flex position-absolute align-items-center justify-content-center d-none" idx = "1">
-                <img src = "img/slide/slide2.jpg" class=" w-100 slide-items">
-                
-                <div class="mx-2 w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center row">
-                    <div class = "anh col-md-4 col-lg-4 col-xl-4 col-4 h-75 d-flex align-items-center justify-content-center">
-                        <img src = "img/logoslide/OLP_logo.jpg">
-                    </div>
-                    <div class = "text-center col-md-8 col-lg-8 col-8 col-xl-8">
-                        <h1>Olympic Tin Học Sinh Viên</h1>
-                        <h>Kì thi tin học lớn nhất dành cho sinh viên hiện nay. Mục đích của cuộc thi nhằm khuyến khích phong trào học tập, rèn luyện, nghiên cứu sáng tạo CNTT-TT của sinh viên trong các trường Đại học, cao đẳng</h>
-                        <br>
-                        <button class  = "btn btn-primary">Chi tiết</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class = "sl w-100 d-flex position-absolute align-items-center justify-content-center d-none" idx = "2">
-                <img src = "img/slide/slide3.jpg" class=" w-100 slide-items">
-                
-                <div class="mx-2 w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center row">
-                    <div class = "anh col-md-4 col-lg-4 col-xl-4 col-4 h-75 d-flex align-items-center justify-content-center ">
-                    <img src = "img/logoslide/PROCON_Logo.png">
-                    </div>
-                    <div class = "text-center col-md-8 col-lg-8 col-8 col-xl-8">
-                        <h1>Procon Việt Nam 2024</h1>
-                        <h>Cuộc thi lập trình đối kháng PROCON danh cho Sinh viên chuyên hoặc không chuyên về CNTT của các trường đại học, cao đẳng trên toàn quốc.</h>
-                        <br>
-                        <button class  = "btn btn-primary">Chi tiết</button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class = "sl w-100 d-flex position-absolute align-items-center justify-content-center d-none" idx = "3">
-                <img src = "img/slide/slide2.jpg" class=" w-100 slide-items">
-                <div class="mx-2 w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center row">
-                    <div class = "text-center col-md-8 col-lg-8 col-xl-8 col-8">
-                        <h1>Phần mềm mã nguồn mở</h1>
-                        <h>Kì thi tin học lớn nhất dành cho sinh viên hiện nay. Mục đích của cuộc thi nhằm khuyến khích phong trào học tập, rèn luyện, nghiên cứu sáng tạo CNTT-TT của sinh viên trong các trường Đại học, cao đẳng</h>
-                        <br>
-                        <button class  = "btn btn-primary">Chi tiết</button>
-                    </div>
-                    
-                    <div class = "anh col-md-4 col-lg-4 col-xl-4 col-4 d-flex align-items-center justify-content-center ">
-                        <img src = "img/logoslide/linux.jpg" style = "border-radius: 5%">
-                    </div>
-                </div>
-            </div>
-
-            <div class="pagination position-absolute start-50 d-flex align-items-center justify-content-center">
-                <span class="dot active" idx = "0"></span>
-                <span class="dot" idx = "1"></span>
-                <span class="dot" idx = "2"></span>
-                <span class="dot" idx = "3"></span>
-            </div>
-        </div>
         <div class="container">
             <div class = "w-100 d-flex justify-content-center align-items-center" style = "height: 120px;width:100%">
                 <div class = "h-100 col-4 d-flex justify-content-center align-items-center">
@@ -175,11 +202,11 @@
         </div>
         <div class = "container school">
             <div class = "row mx-3 border-bottom border-3 pb-5" style = "height: 550px; border-bottom: black">
-                <div class = "col-md-5 col-lg-5 col-xl-5">
+                <div class = "col-sm-12 col-md-12 col-lg-5 col-xl-5">
                     <img src = "img/haui/ahui.jpg" class = "w-100 h-100 style = "object-fit: cover;">
                 </div>
 
-                <div class = "col-md-7 col-lg-7 col-xl-7 d-flex justify-content-center align-items-center">
+                <div class = "col-sm-12 col-md-12 col-lg-7 col-xl-7 d-flex justify-content-center align-items-center">
                     <div class = "px-1">
                         <div class = ""><h2 class = "text-center fw-bold">Đơn vị đăng cai</h2></div>
                         <div class = "px-5 pt-2" style = "text-align:justify;"><h class = "w-100">Trường Đại học Công nghiệp Hà Nội (HaUI) là một trường đại học công lập, đa cấp, đa nghề, định hướng thực hành trực thuộc Bộ Công thương. Trường được nâng cấp lên đại học năm 2005 trên cơ sở Trường Cao đẳng Công nghiệp Hà Nội.</h></div>

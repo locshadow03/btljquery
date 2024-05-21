@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ</title>
+    <title>Danh sách Procon</title>
     <link href = "bootstrap-5.3.3-dist/css/bootstrap.min.css" rel = "stylesheet">
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
@@ -11,18 +11,27 @@
     <link href= "css/listprocon.css" rel = "stylesheet">
     <script src= "jquery-3.7.1.js"></script>
 </head>
-<body>
-        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white header fixed-top">
-            <div class="mx-2 logohaui">
-                <img src="img/logohaui/logohaui1.jfif" class="d-flex align-items-center justify-content-center">
+<body>      
+
+        <div class="notification-container">
+            <div class="notification-icon">
+                <span class="notification-badge">3</span>
+                <i class="fa fa-bell"></i>
             </div>
-        
+        </div>
+          <nav class="navbar navbar-expand-lg navbar-light bg-white header fixed-top">
+            <div class="logohaui" style = "margin-left: 2rem;">
+                <a href="#" class="navbar-brand d-flex align-items-center justify-content-center h-100 w-100">
+                <img src="img/logohaui/logo_truong.webp">
+                </a>
+            </div>
+
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-        
-            <div class="collapse navbar-collapse" id="navMenu">
-                <ul class="navbar-nav mx-auto text-center bg-white">
+
+            <div class="collapse navbar-collapse h-100" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center bg-white" id="nav-list">
                     <li class="nav-item px-2 py-2">
                         <a class="nav-link" href="#">TRANG CHỦ</a>
                     </li>
@@ -41,8 +50,11 @@
                     <li class="nav-item px-2 py-2">
                         <a class="nav-link" href="#">PHÒNG TRƯNG BÀY</a>
                     </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link" href="#">Lịch trình</a>
+                    </li>
                     <li class="nav-item px-2 py-2 dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">LỊCH TRÌNH</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Kết quả</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">IPCP ASIA HANOI 2024</a></li>
                             <li><a class="dropdown-item" href="#">KHỐI SIÊU CUP OLP24</a></li>
@@ -56,100 +68,34 @@
                             <li><a class="dropdown-item" href="#">KHỐI SIÊU CUP OLP24-HSGS</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item px-2 py-2">
-                        <a class="nav-link" href="#">KẾT QUẢ</a>
-                    </li>
                     <li class="nav-item px-2 py-2 border-0">
                         <a class="nav-link" href="#">BAN TỔ CHỨC</a>
                     </li>    
                 </ul>      
             </div>
-            <div class="logoICPC mx-2 text-center">
+            <div class="logoICPC text-center" style = "margin-right: 3rem;">
                 <img src="img/logohaui/logoICPC.png">
             </div>
-        </nav> -->
+        </nav>
 
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-xl navbar-custom navbar-light">
-              <a href="#" class="navbar-brand d-block" id="logo_nav" >
-                <img  src="/img/Trangchu/logo_truong.webp" style="width: 100%;">
-              </a>
-               
-              <button 
-              id="toggle_nav"
-              type="button"
-              data-bs-toggle="collapse"
-              class="navbar-toggler"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-              style="margin-right: 10px;"
-              >
-               <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item active">
-                    <a href="#" class="nav-link active">TRANG CHỦ</a>
-                  </li>
-                  <li class="nav-item active dropdown">
-                    <a href="#" class="nav-link dropdown-toggle"
-                      role="button" id="show_danh_sach"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      DÀNH CHO THÍ SINH
-                    </a>
-                    <ul class="dropdown-menu" >
-                      <li><a class="dropdown-item" href="#">DANH SÁCH OLP</a></li>
-                      <li><a class="dropdown-item" href="#">DANH SÁCH ICPC</a></li>
-                      <li><a class="dropdown-item" href="#">DANH SÁCH PROCON</a></li>
-                      <li><a class="dropdown-item" href="#">DANH SÁCH PMNM</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item active">
-                    <a href="#" class="nav-link">PHÒNG TRƯNG BÀY</a>
-                  </li>
-                  <li class="nav-item active">
-                    <a href="#" class="nav-link">LỊCH TRÌNH</a>
-                  </li>
-                  <li class="nav-item active dropdown">
-                    <a href="#" class="nav-link dropdown-toggle"
-                    role="button" id="show_ket_qua"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    >
-                      KẾT QUẢ
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">IPCP ASIA HANOI 2024</a></li>
-                      <li><a class="dropdown-item" href="#">KHỐI SIÊU CUP OLP24</a></li>
-                      <li><a class="dropdown-item" href="#">KHỐI CHUYÊN TIN</a></li>
-                      <li><a class="dropdown-item" href="#">KHỐI KHÔNG CHUYÊN TIN & CAO ĐẲNG</a></li>
-                      <li><a class="dropdown-item" href="#">KHỐI TẬP THỂ PHẦN MỀM NGUỒN MỞ</a></li>
-                      <li><a class="dropdown-item" href="#">KHỐI TẬP THỂ PROCON VIETNAM</a></li>
-                      <li><a class="dropdown-item" href="#">GIAI ĐỒNG ĐỘI OLYMPIC 2024</a></li>
-                      <li><a class="dropdown-item" href="#">GIẢI NỮ XUẤT SẮC 2024</a></li>
-                      <li><a class="dropdown-item" href="#">ICPC ASIA HUE CITY 2024-HSGS</a></li>
-                      <li><a class="dropdown-item" href="#">KHỐI SIÊU CUP OLP24-HSGS</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item active">
-                    <a href="#" class="nav-link">BAN TỔ CHỨC</a>
-                  </li>
-                </ul>
-              </div>
-              <a id="logo_nav2" href="#" class="navbar-brand position-relative top-100 d-none d-xxl-block">
-                <img  
-                src="/img/Trangchu/logo2 1.png"
-                width="160"
-                height="60"
-                >
-              </a>
-            </nav>
+        <div style="height: 77px;"></div>
+
+        <div class = "container ttt mt-3">
+          <div class = "row h-100">
+            <div class = "col-7 col-md-7 col-xl-7 col-lg-7 h-100 d-flex flex-column justify-content-center">
+              <h1>OLP’24 - ICPC ASIA HANOI 2024 PROCON - PHẦN MỀM MÃ NGUỒN MỞ</h1>
+              <h3 class = "mt-2">TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP HÀ NỘI, từ 10-13/12</h3>
+            </div>
+
+            <div class = "col-5 col-md-5 col-xl-5 col-lg-5">
+              <img src = "img/infor/tu-van-chuyen-doi-so-img.jpg" class = "w-100 h-100">
+            </div>
           </div>
-        <div style = "height: 80px;"></div>
+        </div>
+
+        <div class = "w-100 mt-3 mb-3">
+            <img src = "img/infor/Screenshot 2024-05-20 103815.png" class = "w-100">
+        </div>
 
         <div class = "container mt-4">
             <div class = "w-100">
