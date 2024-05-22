@@ -11,69 +11,72 @@
     <link href= "css/trangchu.css" rel = "stylesheet">
     <script src= "jquery-3.7.1.js"></script>
 </head>
-<body>
+<body>  
+    
         <div class="notification-container">
             <div class="notification-icon">
-                <span class="notification-badge">3</span>
-                <i class="fa fa-bell"></i>
+                <a href ="#"><span class="notification-badge">3</span>
+                <i class="fa fa-bell"></i></a>
             </div>
         </div>
         <nav class="navbar navbar-expand-lg navbar-light bg-white header fixed-top">
-            <div class="logohaui" style = "margin-left: 2rem;">
-                <a href="#" class="navbar-brand d-flex align-items-center justify-content-center h-100 w-100">
-                <img src="img/logohaui/logo_truong.webp">
+            <div class="container-fluid">
+                <div class="logohaui" style="margin-left: 2rem;">
+                    <a href="#" class="navbar-brand d-flex align-items-center justify-content-center h-100 w-100">
+                        <img src="img/logohaui/logo_truong.webp" alt="Logo">
+                    </a>
+                </div>
+        
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse h-100" id="navMenu">
+                    <ul class="navbar-nav mx-auto text-center bg-white" id="nav-list">
+                        <li class="nav-item px-2 py-2">
+                            <a class="nav-link" href="#">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item px-2 py-2">
+                            <a class="nav-link" href="#">GIỚI THIỆU</a>
+                        </li>
+                        <li class="nav-item px-2 py-2 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">DÀNH CHO THÍ SINH</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">DANH SÁCH OLP</a></li>
+                                <li><a class="dropdown-item" href="#">DANH SÁCH ICPC</a></li>
+                                <li><a class="dropdown-item" href="#">DANH SÁCH PROCON</a></li>
+                                <li><a class="dropdown-item" href="#">DANH SÁCH PMNM</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-2 py-2">
+                            <a class="nav-link" href="#">PHÒNG TRƯNG BÀY</a>
+                        </li>
+                        <li class="nav-item px-2 py-2">
+                            <a class="nav-link" href="#">Lịch trình</a>
+                        </li>
+                        <li class="nav-item px-2 py-2 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Kết quả</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">IPCP ASIA HANOI 2024</a></li>
+                                <li><a class="dropdown-item" href="#">KHỐI SIÊU CUP OLP24</a></li>
+                                <li><a class="dropdown-item" href="#">KHỐI CHUYÊN TIN</a></li>
+                                <li><a class="dropdown-item" href="#">KHỐI KHÔNG CHUYÊN TIN & CAO ĐẲNG</a></li>
+                                <li><a class="dropdown-item" href="#">KHỐI TẬP THỂ PHẦN MỀM NGUỒN MỞ</a></li>
+                                <li><a class="dropdown-item" href="#">KHỐI TẬP THỂ PROCON VIETNAM</a></li>
+                                <li><a class="dropdown-item" href="#">GIAI ĐỒNG ĐỘI OLYMPIC 2024</a></li>
+                                <li><a class="dropdown-item" href="#">GIẢI NỮ XUẤT SẮC 2024</a></li>
+                                <li><a class="dropdown-item" href="#">ICPC ASIA HUE CITY 2024-HSGS</a></li>
+                                <li><a class="dropdown-item" href="#">KHỐI SIÊU CUP OLP24-HSGS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-2 py-2 border-0">
+                            <a class="nav-link" href="#">BAN TỔ CHỨC</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="logoICPC text-center" style="margin-right: 3rem;">
+                    <img src="img/logohaui/logoICPC.png" alt="Logo ICPC">
                 </a>
-            </div>
-        
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        
-            <div class="collapse navbar-collapse h-100" id="navMenu">
-                <ul class="navbar-nav mx-auto text-center bg-white" id="nav-list">
-                    <li class="nav-item px-2 py-2">
-                        <a class="nav-link" href="#">TRANG CHỦ</a>
-                    </li>
-                    <li class="nav-item px-2 py-2">
-                        <a class="nav-link" href="#">GIỚI THIỆU</a>
-                    </li>
-                    <li class="nav-item px-2 py-2 dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">DÀNH CHO THÍ SINH</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">DANH SÁCH OLP</a></li>
-                            <li><a class="dropdown-item" href="#">DANH SÁCH ICPC</a></li>
-                            <li><a class="dropdown-item" href="#">DANH SÁCH PROCON</a></li>
-                            <li><a class="dropdown-item" href="#">DANH SÁCH PMNM</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item px-2 py-2">
-                        <a class="nav-link" href="#">PHÒNG TRƯNG BÀY</a>
-                    </li>
-                    <li class="nav-item px-2 py-2">
-                        <a class="nav-link" href="#">Lịch trình</a>
-                    </li>
-                    <li class="nav-item px-2 py-2 dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Kết quả</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">IPCP ASIA HANOI 2024</a></li>
-                            <li><a class="dropdown-item" href="#">KHỐI SIÊU CUP OLP24</a></li>
-                            <li><a class="dropdown-item" href="#">KHỐI CHUYÊN TIN</a></li>
-                            <li><a class="dropdown-item" href="#">KHỐI KHÔNG CHUYÊN TIN & CAO ĐẲNG</a></li>
-                            <li><a class="dropdown-item" href="#">KHỐI TẬP THỂ PHẦN MỀM NGUỒN MỞ</a></li>
-                            <li><a class="dropdown-item" href="#">KHỐI TẬP THỂ PROCON VIETNAM</a></li>
-                            <li><a class="dropdown-item" href="#">GIAI ĐỒNG ĐỘI OLYMPIC 2024</a></li>
-                            <li><a class="dropdown-item" href="#">GIẢI NỮ XUẤT SẮC 2024</a></li>
-                            <li><a class="dropdown-item" href="#">ICPC ASIA HUE CITY 2024-HSGS</a></li>
-                            <li><a class="dropdown-item" href="#">KHỐI SIÊU CUP OLP24-HSGS</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item px-2 py-2 border-0">
-                        <a class="nav-link" href="#">BAN TỔ CHỨC</a>
-                    </li>    
-                </ul>      
-            </div>
-            <div class="logoICPC text-center" style = "margin-right: 3rem;">
-                <img src="img/logohaui/logoICPC.png">
             </div>
         </nav>
     
@@ -106,7 +109,7 @@
                 <div class="carousel-caption w-100 h-100 d-flex align-items-center">
                   <div class = "anh col-md-4 col-lg-4 col-xl-4 col-4 h-100 position-relative">
                       <img src = "img/logoslide/OLP_logo.jpg" 
-                      style="width: 130%; height: auto; left: -10%; top : 10%; "
+                      style="width: 130%; height: 75%; left: -10%; top : 10%; "
                       class="position-absolute"
                       >
                   </div>
